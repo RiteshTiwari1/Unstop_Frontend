@@ -14,7 +14,7 @@ function App() {
 
   const refreshTable = async () => {
     try {
-      const response = await fetch('http://localhost:5001/api/refreshSeats', {
+      const response = await fetch('https://unstop-backend-vv71.onrender.com/api/refreshSeats', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function App() {
     }
 
     try {
-      const response = await fetch('http://localhost:5001/api/bookSeats', {
+      const response = await fetch('https://unstop-backend-vv71.onrender.com/api/bookSeats', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ function App() {
     
     async function fetchData() {
       try {
-        let response = await fetch('http://localhost:5001/api/getData', {
+        let response = await fetch('https://unstop-backend-vv71.onrender.com/api/getData', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
